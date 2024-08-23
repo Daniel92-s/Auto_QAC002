@@ -1,17 +1,18 @@
 package courses.java.oop2;
 
+import lombok.*;
+
+@AllArgsConstructor
+@NoArgsConstructor
 public class Shape {
-    private  String color;
 
-    public Shape(String color) {
-        this.color = color;
-    }
+    @Getter @Setter
+    private String color;
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+    @Getter @Setter
+    private int vertices;
 
-    public String getColor() {
-        return this.color;
+    public int getArea() {
+        return 0;
     }
 }
